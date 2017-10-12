@@ -1,0 +1,19 @@
+{
+  "name": "pcepbn-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "express": ">=4.15.*",
+    "serialport": ">=5.0.*"
+  },
+  "engines": {
+    "node": ">=6.11.*"
+  },
+  "author": "Imprimerie Thorax",
+  "description": "Service REST qui se connecte à une balance PCE-PB N Series",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "license": "ISC"
+}
