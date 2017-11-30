@@ -28,12 +28,14 @@ app.get('/', function (req, res) {
             value = val['value'];
         });
 
-        res.end('getWeight({'
-            + '"poids": "' + poids + '", '
-            + '"sign": "' + sign + '", '
-            + '"value": "' + value + '", '
-            + '"unit": "' + unit + '"'
-            + '})');
+        var infos = {
+            poids: poids,
+            sign: sign,
+            value: value,
+            unit: unit
+        };
+        
+        res.end(infos);
     });
 
     // retourne une erreur si la balance n'est pas connecté
